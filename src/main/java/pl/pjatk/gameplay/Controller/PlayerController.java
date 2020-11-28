@@ -51,7 +51,7 @@ public class PlayerController {
 
     @PutMapping
     public ResponseEntity<Player> update(@RequestBody Player player) {
-        return ResponseEntity.ok(playerService.update(player))
+        return ResponseEntity.ok(playerService.update(player));
     }
 
     //Nowy mapping w przyjmiemy id 2 graczy i gracz 1 zatakuje gracza 2
